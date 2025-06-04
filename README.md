@@ -1,36 +1,23 @@
-# Monorepo Template
+# Visioanni
 
-A template to create a monorepo SST v3 project. [Learn more](https://sst.dev/docs/set-up-a-monorepo).
+A goal tracking application supported by habit building and yearly planning.
 
-## Get started
+## Deployments
 
-1. Use this template to [create your own repo](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
-
-2. Clone the new repo.
-
-   ```bash
-   git clone <REPO_URL> MY_APP
-   cd MY_APP
-   ```
-
-3. Rename the files in the project to the name of your app.
-
-   ```bash
-   npx replace-in-file '/visioanni/g' 'MY_APP' '**/*.*' --verbose
-   ```
-
-4. Deploy!
+1. Deploy!
 
    ```bash
    npm install
    npx sst deploy
    ```
 
-5. Optionally, enable [_git push to deploy_](https://sst.dev/docs/console/#autodeploy).
+2. Remove Deployment!
 
-## Usage
+   ```bash
+   npx sst remove
+   ```
 
-This template uses [npm Workspaces](https://docs.npmjs.com/cli/v8/using-npm/workspaces). It has 3 packages to start with and you can add more it.
+## Packages
 
 1. `core/`
 
@@ -64,7 +51,7 @@ This template uses [npm Workspaces](https://docs.npmjs.com/cli/v8/using-npm/work
 
 3. `scripts/`
 
-    This is for any scripts that you can run on your SST app using the `sst shell` CLI and [`tsx`](https://www.npmjs.com/package/tsx). For example, you can run the example script using:
+   This is for any scripts that you can run on your SST app using the `sst shell` CLI and [`tsx`](https://www.npmjs.com/package/tsx). For example, you can run the example script using:
 
    ```bash
    npm run shell src/example.ts
